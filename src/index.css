@@ -57,6 +57,7 @@ input[type=text] {
 input[type=checkbox] {
   margin-right: 10px;
 }
+
 input[type=text]:focus {
   width: 40%
 } 
