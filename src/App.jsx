@@ -48,12 +48,14 @@ export default function App() {
   }
 
   return (
-    <>
+    <div className="list-complete" >
       <TodoList todos={todos} toggleTodo={toggleTodo} />
       <input ref={todoTaskRef} type="text" placeholder="Nueva Tarea"></input>
-      <button onClick={handleTodoAdd}>➕</button>
-      <button onClick={handleClearAll} >🗑</button>
-      <div>Te quedan {todos.filter((todo) => !todo.completed).length} tareas por terminar</div>
-    </>
+      <section className="buttons">
+        <button onClick={handleTodoAdd}>➕</button>
+        <button onClick={handleClearAll} >🗑</button>
+      </section>
+      <div className="result">Te quedan {todos.filter((todo) => !todo.completed).length} tareas por terminar</div>
+    </div>
   );
 }

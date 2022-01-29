@@ -1,6 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+
 body {
   margin: 0;
   background-color: pink;
+  height: 100vh;
 }
 
+.list-complete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  margin-top: 30px;
+  font-family: 'Supermercado One', cursive;
+}
 
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 0;
+  width: 200px; 
+  flex-wrap: nowrap;
+}
+
+li {
+  margin: 3px auto;
+}
+
+.buttons {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+button {
+  margin: 20px;
+  background-color: lightpink;
+  border: 2px solid violet;
+  font-size: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+input[type=text] {
+  margin-top: 13px;
+  border: none;
+  border-bottom: 2px solid violet;
+  background-color: lightpink;
+  color: gray;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+input:focus {
+  width: 40%
+} 
